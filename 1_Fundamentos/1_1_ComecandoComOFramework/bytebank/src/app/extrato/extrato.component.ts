@@ -1,3 +1,4 @@
+import { Transferencia } from './../models/transferencia.models';
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { TransferenciaService } from '../services/transferencia.service';
 
@@ -15,7 +16,10 @@ export class ExtratoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.transferenciasExtrato = this.service.transferencias;
+    this.service.todas().subscribe((transferencias: Transferencia[]) => {
+      console.table(transferencias);
+      this.transferenciasExtrato = transferencias;
+    });
 
   }
 
