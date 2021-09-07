@@ -13,7 +13,8 @@
 ### Projetos ###
 
 <p> 
-App Bytebanck para a realização das transferências bancárias.
+01_Fundamentos: Foi desenvolvido App Bytebanck, para a realização das transferências bancárias.
+  Foi visto conceitos básicos, Injeção, consumindo api com json-server, rotas.
 </p> 
 
 <p align="center">
