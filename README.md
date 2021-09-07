@@ -2,26 +2,22 @@
 
 ### Sinopse ###
 <p> 
-  Seguindo a carreira angular alura.
+  Seguindo a carreira angular alura e o treinamento de Loiane.
 </p>
 
 ### Tópicos ###
 
-* Fundamentos Angular.
-* Acessibilidade no Angular.
-* Testando uma aplicação Angular.
-* Avançando com bibliotecas.
+* Do básico ao avançado
 
-
- <!--
-### Projeto ###
+ 
+### Projetos ###
 
 <p> 
---
+App Bytebanck para a realização das transferências bancárias.
 </p> 
 
 <p align="center">
   <img src="https://github.com/Jeffconexion/SysAluno/blob/main/sysProject.gif" /> 
 </p>
 
--->
+
