@@ -17,7 +17,7 @@ App Bytebanck para a realização das transferências bancárias.
 </p> 
 
 <p align="center">
-  <img src="https://github.com/Jeffconexion/SysAluno/blob/main/sysProject.gif" /> 
+  <img src="https://github.com/Jeffconexion/Carreira_Angular/blob/main/ByteBank.gif" /> 
 </p>
 
 
