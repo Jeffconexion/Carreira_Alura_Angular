@@ -1,4 +1,5 @@
-<p>Curso de Programação 1!</p>
+<p>Lista de cursos do Portal {{nomePortal}}</p>
 
-<!-- Modulo privado -->
-<app-cursos-detalhes></app-cursos-detalhes>
+<ul>
+  <li *ngFor="let curso of listaCursos">{{curso}}</li>
+</ul>
