@@ -1,0 +1,32 @@
+<section class="property-binding">
+
+  <article>
+    <h3>Class e Style Binding</h3>
+    <div>
+      Selecione uma Classe:
+      <select #tipoAlerta (change)="0">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Alerta</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+      <br><br>
+
+
+      <!-- Class binding  -->
+
+      <div class="alert" role="alert" [class.alert-success]="tipoAlerta.value == 'alert-success'">Sucesso</div>
+      <div class="alert" role="alert" [class.alert-info]="tipoAlerta.value == 'alert-info'">Info</div>
+      <div class="alert" role="alert" [class.alert-warning]="tipoAlerta.value == 'alert-warning'">Alerta</div>
+      <div class="alert" role="alert" [class.alert-danger]="tipoAlerta.value == 'alert-danger'">Erro</div>
+
+      <!-- interpolação no css -->
+      <div class="alert {{ tipoAlerta.value }}"> Texto colorido conforme valor do combobox:{{ tipoAlerta.value }} </div>
+
+      <!-- style bindind -->
+      <div class="alert alert-danger" [style.display]="tipoAlerta.value == 'alert-danger'? 'block':'none' " >Texto para mostrar quando for algum erro.</div>
+
+    </div>
+  </article>
+
+</section>
