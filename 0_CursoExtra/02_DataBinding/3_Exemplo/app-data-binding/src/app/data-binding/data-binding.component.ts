@@ -7,13 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
-  url: string = "www.google.com.br";
-  cursoAngular: boolean = true;
-  urlImagem: string = 'http://lorempixel.com/400/200/';
-  valorAtual: string | undefined;
-  Valor: string | undefined;
-    isMouseOver: boolean = false;
+ nome: string | undefined= "abc" ;
 
+ pessoa : any = {
+  nome: "teste",
+  idade: 21
+ }
 
 
   constructor() { }
@@ -21,33 +20,6 @@ export class DataBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getValor():number{
-    return 1;
-  }
-
-  getCurtirCurso(){
-    return true;
-  }
-
-  botaoClicado(){
-    alert('Botão clicado!');
-  }
-
-  // onKeyUp(event: any){
-  //   console.log((<HTMLInputElement>event.target).value);
-  // }
-
-  onKeyUp(event: any){
-    this.valorAtual = (<HTMLInputElement>event.target).value;
-  }
-
-  salvarValor(valor: any){
-    this.Valor = valor;
-  }
-
-  onMouseOverOut(){
-    this.isMouseOver = !this.isMouseOver;
-  }
 
 
 

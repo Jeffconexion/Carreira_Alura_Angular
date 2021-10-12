@@ -1,34 +1,21 @@
 <section class="property-binding">
 
   <article>
-   <h3>Event Binding</h3>
+    <h3>Two-way data binding</h3>
 
-   <div>
-    <button (click)="botaoClicado()"
-    class="btn btn-primary">Teste
+    <div>
+      <input type="text" [(ngModel)]="nome" >
 
-  </button>
+    </div>
 
-  <input type="text"
-  (keyup)="onKeyUp($event)"
-  (keyup.enter)="salvarValor(campoInput.value)"
+    <p>Você digitou o nome: {{nome}}</p>
 
-  #campoInput
-  />
-  <!-- #campoInput vai fazer o papel de $event.target.value  -->
+    <div>
+      <input type="text" [(ngModel)]="pessoa.nome" >
 
-  <p>Valor Atual: {{valorAtual}}</p>
-  <p>Valor Atual: {{Valor}}</p>
+    </div>
 
-   </div>
+    <p>Você digitou o nome: {{pessoa.nome}}</p>
 
-   <span
-   (mouseover)="onMouseOverOut()"
-   (mouseout)="onMouseOverOut()"
-   [class.highlight]="isMouseOver"
-   >
-    Passe o mouse sobre mim
- </span>
   </article>
-
 </section>

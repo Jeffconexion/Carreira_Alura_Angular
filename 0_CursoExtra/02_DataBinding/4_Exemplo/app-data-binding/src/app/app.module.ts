@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
-import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,8 +15,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    TooltipModule.forRoot(),
-    FormsModule
+    TooltipModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
