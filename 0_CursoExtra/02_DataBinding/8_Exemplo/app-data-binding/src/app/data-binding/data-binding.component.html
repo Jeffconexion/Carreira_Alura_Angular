@@ -1,0 +1,15 @@
+<section class="property-binding">
+
+  <article>
+   <h3>Input/Output Properties</h3>
+
+
+   <app-curso [cursoNome]="nomeDoCurso"></app-curso>
+
+
+   <!-- Trabalho com output property -->
+
+    <contador [valor]="10" (mudouValor)="onMudouValor($event)"></contador>
+
+  </article>
+</section>
