@@ -1,0 +1,37 @@
+<p>
+  diretiva-ngIf works!
+</p>
+
+<h1>*ngIf</h1>
+
+<p *ngIf="lista.length > 0">
+ eu estou apenas testando 1 ...
+</p>
+
+<p *ngIf="lista.length == 0">
+  eu estou apenas testando 2 ...
+ </p>
+
+
+<div *ngIf="mostrarCurso">
+  lista de cursos teste1....
+</div>
+
+<div *ngIf="!mostrarCurso">
+  lista de cursos teste 2....
+</div>
+
+<button (click)="onMostrarCursos()">Mostrar</button>
+
+
+<h1>Hidden</h1>
+<div [hidden]="mostrarCurso">
+  lista de cursos esconde....
+</div>
+
+<div [hidden]="!mostrarCurso">
+  lista de cursos esconde 2....
+</div>
+
+<button (click)="onMostrarCursos()">Mostrar</button>
+

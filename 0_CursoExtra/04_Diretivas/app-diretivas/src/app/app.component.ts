@@ -8,14 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app-diretivas';
 
-  lista: string[] = [];
 
-  mostrarCurso: boolean = false;
-
-
-  onMostrarCursos(){
-    this.mostrarCurso = !this.mostrarCurso;
-  }
 
 }
 
