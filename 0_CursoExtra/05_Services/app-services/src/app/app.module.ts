@@ -10,6 +10,7 @@ import { CursoModule } from './cursos/criar-curso.module';
 @NgModule({
   declarations: [
     AppComponent
+
     ],
   imports: [
     BrowserModule,
